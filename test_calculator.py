@@ -1,5 +1,7 @@
 import unittest
 from calculator import soma, divisao
+# teste soma e divisão
+
 
 class TestCalculator(unittest.TestCase):
 
@@ -31,6 +33,7 @@ class TestCalculator(unittest.TestCase):
     def test_divisao_zero(self):
         with self.assertRaises(ValueError):
             divisao(10, 0)
+
 
 if __name__ == '__main__':
     unittest.main()

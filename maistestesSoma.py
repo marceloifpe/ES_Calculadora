@@ -1,7 +1,10 @@
 import unittest
+from calculator import soma
+
 
 def soma(*args):
     return sum(args)
+
 
 class TestSoma(unittest.TestCase):
     def test_soma_posi(self):
@@ -22,6 +25,7 @@ class TestSoma(unittest.TestCase):
 
     def test_soma_num_uni(self):
         self.assertEqual(soma(7), 7)
+
 
 if __name__ == '__main__':
     unittest.main()
